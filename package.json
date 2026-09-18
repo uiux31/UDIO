@@ -1,0 +1,22 @@
+{
+  "name": "udio",
+  "version": "1.0.0",
+  "description": "UDIO — Spatial Audio Engine for Laptop Speakers",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "spatial-audio",
+    "dsp",
+    "web-audio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^8.2.2",
+    "wavesurfer.js": "^7.12.11"
+  }
+}

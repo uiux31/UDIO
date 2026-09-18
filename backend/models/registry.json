@@ -1,0 +1,27 @@
+{
+  "_comment": "Model registry — pin exact checkpoint versions. Never pull 'latest' silently.",
+  "bs_roformer_primary": {
+    "type":        "music_source_separation",
+    "architecture": "BS-RoFormer",
+    "provider":    "local",
+    "code_repo":   "https://github.com/lucidrains/BS-RoFormer",
+    "code_license": "MIT",
+    "checkpoint":  "REQUIRED: place checkpoint at backend/models/bs_roformer.ckpt",
+    "checkpoint_version": "UNSET — verify and pin before production",
+    "checkpoint_license": "VERIFY BEFORE USE — checkpoint license may differ from code license",
+    "enabled":     false,
+    "notes":       "Set enabled=true after verifying checkpoint license and placing file at backend/models/bs_roformer.ckpt"
+  },
+  "htdemucs_fallback": {
+    "type":        "music_source_separation",
+    "architecture": "HTDemucs v4",
+    "provider":    "local",
+    "code_repo":   "https://github.com/facebookresearch/demucs",
+    "code_license": "MIT",
+    "checkpoint":  "Downloaded automatically by demucs Python package",
+    "checkpoint_version": "htdemucs (demucs >= 4.0.0)",
+    "checkpoint_license": "MIT — https://github.com/facebookresearch/demucs/blob/main/LICENSE",
+    "enabled":     true,
+    "notes":       "Weights downloaded to ~/.cache/torch/hub on first inference"
+  }
+}

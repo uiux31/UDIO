@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vscode/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.DS_Store
+backend/jobs/
